@@ -1,0 +1,46 @@
+{
+    "Emails": [
+        {
+            "Email": "aline.mukamana@example.com",
+            "Type": "external"
+        },
+        {
+            "Email": "backup.email@example.net",
+            "Type": "external"
+        },
+        {
+            "Email": "brian.k@alumni.alueducation.com",
+            "Type": "alumni"
+        },
+        {
+            "Email": "brian.k@example.org",
+            "Type": "external"
+        },
+        {
+            "Email": "chantal.uwase@alueducation.com",
+            "Type": "official"
+        },
+        {
+            "Email": "chantal.uwase@si.alueducation.com",
+            "Type": "si"
+        }
+    ],
+    "URL": [
+        "http://portal.example.com/login",
+        "https://portal.example.com/Account/1044",
+        "https://support.example.com/help/contact.",
+        "https://www.alueducation.com/alumni/events",
+        "https://www.alueducation.com/students/aline-mukamana"
+    ],
+    "Phone_Numbers": [
+        "+250 788 123 456",
+        "+250 790 111 222",
+        "+250-722-456-789",
+        "0788 987 654"
+    ],
+    "Cards": [
+        "**** **** **** 1111",
+        "**** **** **** 1117",
+        "**** **** **** 4444"
+    ]
+}
