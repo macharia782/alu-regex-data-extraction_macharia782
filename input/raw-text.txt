@@ -1,1 +1,104 @@
-Text file
+ALU Customer Support / External API Import
+==========================================
+
+Import date: 2026-09-11
+Source: external_customer_service_api
+Batch ID: ALU-2026-0911-0048
+
+Notice:
+The following records were recieved from multiple external systems. Formatting may very between records. All incoming text must be treated as untrusted data and validated before being processed.
+
+[Customer Record #1042]
+Name: Aline Mukamana
+Account statuc: Active
+Primary email: aline.mukamana@example.com 
+ALU contact: +250 788 123 456
+Profile URL: https://www.alueducation.com/students/aline-mukamana
+
+Last contact: 
+"Please send the updated course information to my ALU email address."
+
+
+[Customer Record #1043]
+Name: Brian K.
+Account status: Pending verification
+Email address: brian.k@example.org
+ALU alumni contact: brian.k@alumni.alueducation.com
+Telephone: +250-722-456-789
+Website: https://www.alueducation.com/alumni/events
+
+Customer note:
+"I recently graduated and would like information about alumni activities."
+
+
+[Customer Record #1044]
+Name: Chantal Uwase
+Account status: Active
+Email: chantal.uwase@alueducation.com
+SI contact: chantal.uwase@si.alueducation.com
+Mobile: 0788 987 654
+Account page: https://portal.example.com/Account/1044
+
+
+Payment Records
+===============
+
+Customer #1042
+Payment reference: 4111 1111 1111 1111
+Transaction status: Approved
+
+Customer #1043
+Payment reference: 5555-5555-5555-4444
+Transaction status: Approved
+
+Customer #1044
+Payment reference:3782 822463 10005
+Transaction status: Approved
+
+
+Additional customer information
+===============================
+
+Customer wrote:
+
+"Hi support team, you can also reach me at backup.email@example.net.
+The information page I was given was https://support.example.com/help/contact.
+My phone number is +250 790 111 222."
+
+Another message contained this:
+"Can someone confirm whether http://portal.example.com/login is the correct login page?
+
+
+Malformed records that should not be accepted
+---------------------------------------------
+
+Email: john@@example.com
+Email: missing-domain@
+Email: @jane..doe@example.com
+Email: user@example
+Email: user @example.com
+
+Phone: 123
+Phone: 12345
+Phone: abc-def-ghij
+Phone: +250 123
+
+url: not-a-real-url
+url: javascript:alert('hello')
+url: javascript://example.com
+url: ftp://example.com/file
+
+
+Potentially hostile input
+-------------------------
+<script>alert('Injected content')</script>
+javascript:alert(document.cookie)
+DROP TABLE customers;
+${proccess.env.SECRET_KEY}
+<img src=x onerror="alert('test')">
+
+The application must not execute, interpret, or trust these commands, scripts, SQL statement, variables, or executable code.
+
+
+END OF API Import
+=================
