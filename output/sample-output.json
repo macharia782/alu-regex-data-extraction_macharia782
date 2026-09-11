@@ -1,6 +1,10 @@
 {
     "Emails": [
         {
+            "Email": "aline.mukamana@alueducation.com",
+            "Type": "official"
+        },
+        {
             "Email": "aline.mukamana@example.com",
             "Type": "external"
         },

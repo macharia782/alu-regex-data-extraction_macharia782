@@ -12,7 +12,8 @@ The following records were recieved from multiple external systems. Formatting m
 Name: Aline Mukamana
 Account statuc: Active
 Primary email: aline.mukamana@example.com 
-ALU contact: +250 788 123 456
+ALU contact: aline.mukamana@alueducation.com
+Phone: +250 788 123 456
 Profile URL: https://www.alueducation.com/students/aline-mukamana
 
 Last contact: 
